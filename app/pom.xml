@@ -24,7 +24,7 @@
 
 	<scm>
 		<connection>scm:git:192.168.1.54/conference-app.git</connection>
-		<url>https://github.com/codecentric/conference-app</url>
+		<url>https://github.com/rburton04/conference-app</url>
 		<developerConnection>scm:git:192.168.1.54/conference-app.git</developerConnection>
 	</scm>
 
