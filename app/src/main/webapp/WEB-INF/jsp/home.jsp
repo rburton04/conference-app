@@ -6,7 +6,7 @@
 	  <div class="container">
 	    <div class="panel panel-default">
 	      <div class="panel-body">
-	        <h2>DevOps - Control Your Entire Test Pipeline @ SWAT TCQAA 2017 added to pipeline Master4</h2>
+	        <h2>DevOps - Control Your Entire Test Pipeline @ SWAT TCQAA 2017 added to pipeline Master5</h2>
 	        <p> Possibilities are Endless
 	        </p>
 	      </div>
