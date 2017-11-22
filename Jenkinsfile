@@ -3,7 +3,16 @@ pipeline {
   stages {
     stage('Dev') {
       steps {
-        echo 'test jenkins file'
+        parallel(
+          "Dev": {
+            echo 'test jenkins file'
+            
+          },
+          "Sonar Qube Tests": {
+            echo 'Sonar Qube Tests'
+            
+          }
+        )
       }
     }
     stage('Integration') {
@@ -13,15 +22,15 @@ pipeline {
             echo 'build docker'
             
           },
-          "Branch1 Spec1": {
+          "Branch1 BOLT1": {
             echo 'API 1'
             
           },
-          "Branch2 Spec2": {
+          "Branch2 BOLT": {
             echo 'API 2'
             
           },
-          "Integration before QA": {
+          "BOLT Integration before QA": {
             echo 'Integration'
             
           }
@@ -30,17 +39,64 @@ pipeline {
     }
     stage('QA') {
       steps {
-        echo 'QA'
+        parallel(
+          "QA": {
+            echo 'QA'
+            
+          },
+          "BOLT Tests": {
+            echo 'Report'
+            
+          },
+          "Monitoring": {
+            echo 'Monitor QA'
+            
+          },
+          "Reports": {
+            echo 'Reports'
+            
+          }
+        )
       }
     }
     stage('PreProd') {
       steps {
-        echo 'PreProd'
+        parallel(
+          "PreProd": {
+            echo 'SPEC TESTING'
+            
+          },
+          "BOLT Tests": {
+            echo 'Report'
+            
+          },
+          "Monitoring": {
+            echo 'Monitoring'
+            
+          },
+          "Reports": {
+            echo 'Reports'
+            
+          }
+        )
       }
     }
     stage('Reports') {
       steps {
-        echo 'Reports'
+        parallel(
+          "Reports": {
+            echo 'Reports'
+            
+          },
+          "Dashboard Results": {
+            echo 'Dashboard Results'
+            
+          },
+          "JIRA Bugs": {
+            echo 'Auto Add Jira Bugs'
+            
+          }
+        )
       }
     }
   }
