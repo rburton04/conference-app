@@ -6,19 +6,23 @@ pipeline {
         echo 'test jenkins file'
       }
     }
-    stage('error') {
+    stage('Integration') {
       steps {
         parallel(
-          "Branch 1": {
+          "Integration": {
             echo 'build docker'
             
           },
-          "Branch 2": {
-            echo 'branch 2'
+          "Branch1 Spec1": {
+            echo 'API 1'
+            
+          },
+          "Branch2 Spec2": {
+            echo 'API 2'
             
           },
           "Integration before QA": {
-            echo 'integration'
+            echo 'Integration'
             
           }
         )
