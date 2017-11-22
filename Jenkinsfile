@@ -1,17 +1,12 @@
 pipeline {
-  agent {
-    dockerfile {
-      filename 'dockerfile'
-    }
-    
-  }
+  agent none
   stages {
     stage('Dev') {
       steps {
         echo 'test jenkins file'
       }
     }
-    stage('') {
+    stage('error') {
       steps {
         parallel(
           "Branch 1": {
