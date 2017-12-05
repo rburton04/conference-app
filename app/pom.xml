@@ -163,7 +163,7 @@
 	    <repository>
 	        <id>nexus-release-repository</id>
 	        <name>release-repository</name>
-	        <url>${REPOSITORY_URL}</url>
+	        <url>http://nexus-bolt.13.57.153.254.nip.io/content/repositories/releases/</url>
 	    </repository>
 	</distributionManagement>
 
