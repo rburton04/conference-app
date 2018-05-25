@@ -170,7 +170,7 @@
      <!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
      <id>openshift</id>
      <build>
-        <finalName>conferenceapp</finalName>
+        <finalName>conferenceappbolt</finalName>
         <plugins>
           <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -180,7 +180,7 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                     <outputDirectory>target</outputDirectory>
               		  <warName>ROOT</warName>
-			  <finalName>myJar</finalName>
+			 
                 </configuration>
             </plugin>
         </plugins>
