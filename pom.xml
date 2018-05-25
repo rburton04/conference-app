@@ -180,6 +180,7 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                     <outputDirectory>target</outputDirectory>
               		  <warName>ROOT</warName>
+			  <finalName>myJar</finalName>
                 </configuration>
             </plugin>
         </plugins>
