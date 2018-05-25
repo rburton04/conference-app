@@ -4,7 +4,7 @@
 
 	<groupId>de.codecentric</groupId>
 	<artifactId>conference-app</artifactId>
-	<version>3.0.0</version>
+	<version>4.0.0</version>
 	<packaging>war</packaging>
 
 	<name>Conference App</name>
