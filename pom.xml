@@ -147,7 +147,7 @@
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                     <outputDirectory>target</outputDirectory>
-              		  <warName>conferenceapp-boot.war</warName>
+              		  <warName>ROOT</warName>
 			 
                 </configuration>
             </plugin>
