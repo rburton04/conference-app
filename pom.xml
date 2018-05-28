@@ -4,11 +4,11 @@
 
 	<groupId>boltiq</groupId>
 	<artifactId>conference-app</artifactId>
-	<version>3.0.0</version>
+	<version>4.0.0</version>
         <packaging>war</packaging>
 	
 
-	<name>Conference App-dev</name>
+	<name>Conference App</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -174,7 +174,7 @@
      <!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
      <id>openshift</id>
      <build>
-        <finalName>conferenceappbolt</finalName>
+        <finalName>conferenceapp</finalName>
         <plugins>
           <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
