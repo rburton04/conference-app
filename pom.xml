@@ -6,9 +6,9 @@
 	<artifactId>conference-app</artifactId>
 	<version>3.0.0</version>
         <packaging>war</packaging>
-	<name>conference-app</name>
+	
 
-	<name>Conference App</name>
+	<name>Conference App-dev</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
